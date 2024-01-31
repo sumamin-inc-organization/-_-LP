@@ -186,8 +186,116 @@ body{
 			}
 		}
 	}
+	.scroll-product{
+		position: relative;
+		overflow: hidden;
+		overflow-x: scroll;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.md-product{
+		display: flex;
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+		width: 192%;
+		&.for-item{
+			width: 258%;
+		}
+		&.five-item{
+			width: 324%;
+		}
+		.item{
+			width: 232px;
+			height: 308px;
+			margin-right: 25px;
+			background-image: url(../images/bg-product.png);
+			background-size: cover;
+			display: flex;
+		  flex-direction: row;
+		  flex-wrap: nowrap;
+		  justify-content: center;
+		  align-items: center;
+			.title{
+				width: 224px;
+				height: 300px;
+				padding: 10px 32px;
+				h5{
+					font-style: normal;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 23px;
+					text-align: center;
+					height: 46px;
+					color: #333333;
+					margin-top: 5px;
+					margin-bottom: 15px;
+				}
+				.img{
+					img{
+						width: 160px;
+						height: 140px;
+						object-fit: cover;
+					}
+				}
+				.cat{
+					font-size: 16px;
+					color: #333;
+					text-align: center;
+					margin-top: 5px;
+					margin-bottom: 5px;
+				}
+				.price{
+					font-style: normal;
+					font-weight: 700;
+					font-size: 24px;
+					line-height: 35px;
+					text-align: center;
+					color: #CE2323;
+				}
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
 }
-
+.main{
+	overflow: hidden;
+	position: relative;
+  max-width: 390px;
+  margin: 0 auto;
+}
+.md-title-sub{
+	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+	.sub-title{
+		width: 224px;
+		height: 50px;
+		background: #003064;
+		position: relative;
+		display: flex;
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+	  justify-content: center;
+	  align-items: center;
+		img{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		h4{
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 35px;
+			color: #fff;
+		}
+	}
+}
 .home-section{
 	
 }
