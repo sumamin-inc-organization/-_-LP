@@ -777,6 +777,12 @@ footer{
 		}
 	}
 }
+.fixed{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+}
 
 // mobile
 @media (max-width: 1435px) {
